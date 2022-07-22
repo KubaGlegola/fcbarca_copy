@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/9997a9e008.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -12,29 +16,116 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="header__logoContainer">
+                <a href="#"><img class='header__logo' src="images/logo.svg" alt=""></a>
+            </div>
+            <div class="header__searchContainer">
 
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
         </header>
         <nav class="navbar">
-
+            <ul class="menu menu--desktop">
+                <li class="menu__item"><i class="fa-solid fa-house"></i></li>
+                <li class="menu__item">La Rambla</li>
+                <li class="menu__item">Zostań Patronem</li>
+                <li class="menu__item">Barcelona</li>
+                <li class="menu__item">Historia</li>
+                <li class="menu__item">Sezon</li>
+                <li class="menu__item">Strefa Cules</li>
+                <li class="menu__item">Serwis</li>
+                <li class="menu__item">Zagranie.com</li>
+            </ul>
+            <ul class="menu menu--mobile">
+                <li class="menu__item">
+                    <i class="fa-solid fa-calendar"></i>
+                    <span class="menu__description">Terminarz</span>
+                </li>
+                <li class="menu__item">
+                    <i class="fa-solid fa-message"></i>
+                    <span class="menu__description">La Rambla</span>
+                </li>
+                <li class="menu__item">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="menu__description">Główna</span>
+                </li>
+                <li class="menu__item">
+                    <i class="fa-solid fa-tv"></i>
+                    <span class="menu__description">Nast. mecz</span>
+                </li>
+                <li class="menu__item">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="menu__description">Menu</span>
+                </li>
+            </ul>
         </nav>
         <section class="latestNews">
+            <a href="#" class="latestNews__article latestNews__article--large">
+                <img src="https://www.fcbarca.com/uploads/new-news-large/105839_1658466757.jpg" alt=""
+                    class="latestNews__photo latestNews__photo--large">
+                <div class="latestNews__detail">
+                    <p class="latestNews__date">
+                        <i class="fa-solid fa-calendar"></i>
+                        9 godzin temu
+                    </p>
+                    <p class="latestNews__comments">
+                        <i class="fa-solid fa-message"></i>
+                        50 komentarzy
+                    </p>
+                </div>
+                <p class="latestNews__title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </a>
 
+            <a href="#" class="latestNews__article latestNews__article--small">
+                <img src="https://www.fcbarca.com/uploads/new-news-large/105839_1658466757.jpg" alt=""
+                    class="latestNews__photo latestNews__photo--small">
+                <p class="latestNews__title latestNews__title--small">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </a>
+            <a href="#" class="latestNews__article latestNews__article--small">
+                <img src="https://www.fcbarca.com/uploads/new-news-large/105839_1658466757.jpg" alt=""
+                    class="latestNews__photo latestNews__photo--small">
+                <p class="latestNews__title latestNews__title--small">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </a>
         </section>
-        <section class="nextMatch">
-
+        <section class="nextMatchContainer">
+            <div class="matchDetail">
+                <div class="matchDetail__host">
+                    <p>team1</p>
+                    <i class="fa-solid fa-shield"></i>
+                </div>
+                <div class="matchDetail__dateBox">
+                    <p class="matchDetail__day">niedz.</p>
+                    <p class="matchDetail__date">24.07</p>
+                    <p class="matchDetail__time">21:00</p>
+                </div>
+                <div class="matchDetail__guest">
+                    <p>team2</p>
+                    <i class="fa-solid fa-shield"></i>
+                </div>
+            </div>
+            <div class="matchInfo">
+                <p class="matchInfo__location">Camp Nou, Barcelona</p>
+                <p class="matchInfo__channel">Polsat Sport</p>
+            </div>
         </section>
         <section class="news">
             <div class="news__list">
 
             </div>
-            <div class="news__sidebar">
 
-            </div>
         </section>
         <footer class="footer">
 
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
